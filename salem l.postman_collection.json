@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "48b19f6a-7136-4bfe-9eeb-1b58ec83de4b",
+		"name": "salem l",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27741832"
+	},
+	"item": [
+		{
+			"name": "weathers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherbit.io/v2.0/current?lat=11.664325&lon=78.146011&key=96536ea88c7544b897f593c26a32b167",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherbit",
+						"io"
+					],
+					"path": [
+						"v2.0",
+						"current"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "11.664325"
+						},
+						{
+							"key": "lon",
+							"value": "78.146011"
+						},
+						{
+							"key": "key",
+							"value": "96536ea88c7544b897f593c26a32b167"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "weathers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.weatherbit.io/v2.0/current?lat=11.664325&lon=78.146011&key=96536ea88c7544b897f593c26a32b167",
+							"protocol": "https",
+							"host": [
+								"api",
+								"weatherbit",
+								"io"
+							],
+							"path": [
+								"v2.0",
+								"current"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "11.664325"
+								},
+								{
+									"key": "lon",
+									"value": "78.146011"
+								},
+								{
+									"key": "key",
+									"value": "96536ea88c7544b897f593c26a32b167"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "server",
+							"value": "openresty/1.21.4.1"
+						},
+						{
+							"key": "date",
+							"value": "Tue, 13 Jun 2023 04:44:58 GMT"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "keep-alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "1500"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "1489"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1686700799"
+						},
+						{
+							"key": "x-proxy-cache",
+							"value": "HIT"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET, OPTIONS, POST"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"data\": [\n        {\n            \"app_temp\": 17.7,\n            \"aqi\": 50,\n            \"city_name\": \"Salem\",\n            \"clouds\": 0,\n            \"country_code\": \"IN\",\n            \"datetime\": \"2023-06-13:04\",\n            \"dewpt\": 18.6,\n            \"dhi\": 109.83,\n            \"dni\": 866.55,\n            \"elev_angle\": 48.59,\n            \"ghi\": 752.84,\n            \"gust\": 3.9160156,\n            \"h_angle\": -30,\n            \"lat\": 11.6643,\n            \"lon\": 78.146,\n            \"ob_time\": \"2023-06-13 04:27\",\n            \"pod\": \"d\",\n            \"precip\": 0,\n            \"pres\": 945.5,\n            \"rh\": 48,\n            \"slp\": 973.9969,\n            \"snow\": 0,\n            \"solar_rad\": 752.8,\n            \"sources\": [\n                \"analysis\"\n            ],\n            \"state_code\": \"25\",\n            \"station\": \"VOTR\",\n            \"sunrise\": \"00:22\",\n            \"sunset\": \"13:07\",\n            \"temp\": 30.9,\n            \"timezone\": \"Asia/Kolkata\",\n            \"ts\": 1686630433,\n            \"uv\": 6.5496335,\n            \"vis\": 16,\n            \"weather\": {\n                \"icon\": \"c01d\",\n                \"description\": \"Clear sky\",\n                \"code\": 800\n            },\n            \"wind_cdir\": \"WNW\",\n            \"wind_cdir_full\": \"west-northwest\",\n            \"wind_dir\": 282,\n            \"wind_spd\": 2.9670694\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
